@@ -68,30 +68,7 @@ controller.actualizar = (req, res) => {
         
     };
 
-/*controller.registro = (async (req, res) => {
-        const usuario = req.body.usuario;
-        const nombre = req.body.nombre;
-        const contraseña = req.body.contraseña;
-        let passwordHaash = await bcryptjs.hash(contraseña, 8);
-            conn.query('INSERT INTO login set ?' , {usuario:usuario, nombre:nombre, contraseña:passwordHaash}, 
-            async(error, results) => {
-                if(error){
-                console.log(error);
-                }else{
-                    res.redirect('login',{            
-                    alert:true,
-                    alertTitle: "Registrado",
-                    alertMessage: "Registro exitoso",
-                    alertIcon: 'success',
-                    time: 1500
-                    });
-                    
-    
-                };
-                
-            
-        });
-    });*/
+
 
     
 module.exports = controller;
